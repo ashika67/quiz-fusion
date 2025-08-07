@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>QuizFusion</h1>
+        <div id="category-selection" style="display: block;">
+            <h2>Select a Category</h2>
+            <select id="category">
+                <option value="general">General Knowledge</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+            </select>
+            <button id="start-btn" class="btn">Start Quiz</button>
+        </div>
+        <div id="quiz" style="display: none;">
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <div id="timer">Time Left: <span id="time">15</span>s</div>
+            <div id="question-container">
+                <div id="question"></div>
+                <div id="answer-buttons" class="btn-grid"></div>
+            </div>
+            <div id="feedback" style="display: none;"></div>
+            <div id="controls">
+                <button id="next-btn" class="btn" style="display: none;">Next</button>
+                <button id="restart-btn" class="btn" style="display: none;">Restart</button>
+            </div>
+            <div id="score-container" style="display: none;">
+                <h2>Your Score: <span id="score"></span></h2>
+                <h3>High Score: <span id="high-score"></span></h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
